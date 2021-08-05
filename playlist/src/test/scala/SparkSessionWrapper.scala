@@ -11,7 +11,6 @@ trait SparkSessionWrapper extends Suite with BeforeAndAfterEach {
       .getOrCreate()
   }
 
-
   override def beforeEach() {
     println("cleaning cache")
     spark.catalog.clearCache()
